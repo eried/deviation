@@ -63,7 +63,7 @@ static u16 usbhid_cb()
         
     HID_Write(packet, sizeof(packet));
 
-    return 50000;
+    return 400; // faster refresh
 }
 
 static void deinit()
